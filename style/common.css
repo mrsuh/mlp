@@ -10,7 +10,6 @@ body {
   color: black;
   background: url(/mlp/img/bg_all.jpg) center top;
 }
-
 *,
 *:before,
 *:after {
@@ -166,7 +165,32 @@ header .content .wrapper h2 {
   .bg-container .content-header {
     height: 10px;
   }
+  .bg-container .test {
+    height: inherit;
+    background: none;
+  }
   .bg-container .test img {
     width: 100%;
+  }
+  .bg-container .test .play {
+    margin-top: 60px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #e98195;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-align: center;
+    line-height: 150px;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 0;
+    top: 0;
+    transform: none;
+  }
+  .bg-container .test .play:hover {
+    cursor: pointer;
+    background: #24b2ca;
   }
 }
