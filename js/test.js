@@ -51,6 +51,10 @@ Test.prototype.showPersonage = function () {
 
     div.addEventListener("transitionend", function () {
 
+        this.block.style.background = 'none';
+        this.block.style.height = 'inherit';
+        this.block.style.marginTop = '-45px';
+
         while (this.block.firstChild) {
             this.block.removeChild(this.block.firstChild);
         }
