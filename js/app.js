@@ -12,7 +12,7 @@ var personages = [
     {
         id: 'rainbow_dash',
         name: 'RainbowDash',
-        img: '/img/personages/rarity.png'
+        img: '/img/personages/fluttershy.png'
     },
     {
         id: 'rarity',
