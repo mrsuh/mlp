@@ -16,8 +16,6 @@ Test.prototype.onAnswerClick = function () {
         this.answers.push(personages[i]);
     }
 
-    console.info(this.personages);
-
     if (++this.question_index >= this.questions.length) {
         this.showPersonage();
 
@@ -115,8 +113,6 @@ Test.prototype.mathPersonageByAnswers = function () {
         personages[answer]++;
     }
 
-    console.info(personages);
-
     var max = 0;
     var personage = null;
 
@@ -126,8 +122,6 @@ Test.prototype.mathPersonageByAnswers = function () {
             personage = key;
         }
     }
-
-    console.info(personage);
 
     for (var i = 0, length = this.personages.length; i < length; i++) {
 
@@ -188,8 +182,6 @@ Test.prototype.rebderQuestion = function () {
         div_answer.className = 'answer';
         div_answer.style.background = answer.background;
         div_answer.addEventListener('click', function (event) {
-
-            console.info('TIME: ' + (new Date().getTime() - this.time));
 
             if (new Date().getTime() - this.time < 300) {
                 return false;
