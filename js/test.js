@@ -16,8 +16,6 @@ Test.prototype.onAnswerClick = function () {
         this.answers.push(personages[i]);
     }
 
-    console.info(this.personages);
-
     if (++this.question_index >= this.questions.length) {
         this.showPersonage();
 
@@ -30,6 +28,13 @@ Test.prototype.onAnswerClick = function () {
 Test.prototype.init = function () {
 
     this.answers = [];
+    this.question_index = 0;
+
+    while (this.block.firstChild) {
+        this.block.removeChild(this.block.firstChild);
+    }
+
+    this.block.className = 'test';
 
     var play = document.createElement('DIV');
 
@@ -51,9 +56,7 @@ Test.prototype.showPersonage = function () {
 
     div.addEventListener("transitionend", function () {
 
-        this.block.style.background = 'none';
-        this.block.style.height = 'inherit';
-        this.block.style.marginTop = '-45px';
+        this.block.className = 'test personage';
 
         while (this.block.firstChild) {
             this.block.removeChild(this.block.firstChild);
@@ -66,19 +69,29 @@ Test.prototype.showPersonage = function () {
 
         var text = document.createElement('H2');
 
-        text.innerHTML = 'Congratulations! <br> Your pony is "' + personage.name + '"';
+        if('spike' === personage.id ) {
+            text.innerHTML = 'Congratulations! <br> Your personage is "' + personage.name + '"';
+        } else {
+            text.innerHTML = 'Congratulations! <br> Your pony is "' + personage.name + '"';
+        }
 
         var image = document.createElement('IMG');
 
         image.src = personage.img;
 
-        console.info('DONE');
+        var block_repeat = document.createElement('DIV');
+        block_repeat.className = 'replay';
+        block_repeat.innerText = 'replay';
 
         block.appendChild(text);
         block.appendChild(image);
+        block.appendChild(block_repeat);
 
         this.block.appendChild(block);
 
+        block_repeat.addEventListener('click', function(){
+            this.init();
+        }.bind(this));
 
         setTimeout(function () {
             block.style.opacity = 1;
@@ -100,8 +113,6 @@ Test.prototype.mathPersonageByAnswers = function () {
         personages[answer]++;
     }
 
-    console.info(personages);
-
     var max = 0;
     var personage = null;
 
@@ -111,8 +122,6 @@ Test.prototype.mathPersonageByAnswers = function () {
             personage = key;
         }
     }
-
-    console.info(personage);
 
     for (var i = 0, length = this.personages.length; i < length; i++) {
 
@@ -173,8 +182,6 @@ Test.prototype.rebderQuestion = function () {
         div_answer.className = 'answer';
         div_answer.style.background = answer.background;
         div_answer.addEventListener('click', function (event) {
-
-            console.info('TIME: ' + (new Date().getTime() - this.time));
 
             if (new Date().getTime() - this.time < 300) {
                 return false;

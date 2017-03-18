@@ -2,37 +2,37 @@ var personages = [
     {
         id: 'twilight_sparkle',
         name: 'Twilight Sparkle',
-        img: '/mlp/img/rarity.png'
+        img: '/mlp/img/personages/twilight_sparkle.png'
     },
     {
         id: 'spike',
         name: 'Spike',
-        img: '/mlp/img/rarity.png'
+        img: '/mlp/img/personages/spike.png'
     },
     {
         id: 'rainbow_dash',
         name: 'RainbowDash',
-        img: '/mlp/img/personages/rarity.png'
+        img: '/mlp/img/personages/rainbow_dash.png'
     },
     {
         id: 'rarity',
         name: 'RainbowDash',
-        img: '/mlp/img/rarity.png'
+        img: '/mlp/img/personages/rarity.png'
     },
     {
         id: 'fluttershy',
         name: 'Fluttershy',
-        img: '/mlp/img/rarity.png'
+        img: '/mlp/img/personages/fluttershy.png'
     },
     {
         id: 'pinkie_pie',
         name: 'Pinkamina Diane "Pinkie" Pie',
-        img: '/mlp/img/rarity.png'
+        img: '/mlp/img/personages/pinkie_pie.png'
     },
     {
         id: 'applejack',
         name: 'Applejack',
-        img: '/mlp/img/rarity.png'
+        img: '/mlp/img/personages/applejack.png'
     }
 ];
 
