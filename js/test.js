@@ -30,6 +30,13 @@ Test.prototype.onAnswerClick = function () {
 Test.prototype.init = function () {
 
     this.answers = [];
+    this.question_index = 0;
+
+    while (this.block.firstChild) {
+        this.block.removeChild(this.block.firstChild);
+    }
+
+    this.block.className = 'test';
 
     var play = document.createElement('DIV');
 
@@ -51,9 +58,7 @@ Test.prototype.showPersonage = function () {
 
     div.addEventListener("transitionend", function () {
 
-        this.block.style.background = 'none';
-        this.block.style.height = 'inherit';
-        this.block.style.marginTop = '-45px';
+        this.block.className = 'test personage';
 
         while (this.block.firstChild) {
             this.block.removeChild(this.block.firstChild);
@@ -66,19 +71,29 @@ Test.prototype.showPersonage = function () {
 
         var text = document.createElement('H2');
 
-        text.innerHTML = 'Congratulations! <br> Your pony is "' + personage.name + '"';
+        if('spike' === personage.id ) {
+            text.innerHTML = 'Congratulations! <br> Your personage is "' + personage.name + '"';
+        } else {
+            text.innerHTML = 'Congratulations! <br> Your pony is "' + personage.name + '"';
+        }
 
         var image = document.createElement('IMG');
 
         image.src = personage.img;
 
-        console.info('DONE');
+        var block_repeat = document.createElement('DIV');
+        block_repeat.className = 'replay';
+        block_repeat.innerText = 'replay';
 
         block.appendChild(text);
         block.appendChild(image);
+        block.appendChild(block_repeat);
 
         this.block.appendChild(block);
 
+        block_repeat.addEventListener('click', function(){
+            this.init();
+        }.bind(this));
 
         setTimeout(function () {
             block.style.opacity = 1;

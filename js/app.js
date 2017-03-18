@@ -2,37 +2,37 @@ var personages = [
     {
         id: 'twilight_sparkle',
         name: 'Twilight Sparkle',
-        img: '/img/rarity.png'
+        img: '/img/personages/twilight_sparkle.png'
     },
     {
         id: 'spike',
         name: 'Spike',
-        img: '/img/rarity.png'
+        img: '/img/personages/spike.png'
     },
     {
         id: 'rainbow_dash',
         name: 'RainbowDash',
-        img: '/img/personages/fluttershy.png'
+        img: '/img/personages/rainbow_dash.png'
     },
     {
         id: 'rarity',
-        name: 'RainbowDash',
-        img: '/img/rarity.png'
+        name: 'Rarity',
+        img: '/img/personages/rarity.png'
     },
     {
         id: 'fluttershy',
         name: 'Fluttershy',
-        img: '/img/rarity.png'
+        img: '/img/personages/fluttershy.png'
     },
     {
         id: 'pinkie_pie',
         name: 'Pinkamina Diane "Pinkie" Pie',
-        img: '/img/rarity.png'
+        img: '/img/personages/pinkie_pie.png'
     },
     {
         id: 'applejack',
         name: 'Applejack',
-        img: '/img/rarity.png'
+        img: '/img/personages/applejack.png'
     }
 ];
 
@@ -42,33 +42,33 @@ var questions = [
         answers: [
             {
                 answer: 'Magic',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['twilight_sparkle', 'rarity'],
+                background: '#d81b60'
             },
             {
                 answer: 'Honesty',
-                personages: ['rainbow_dash'],
-                background: '#24b2ca'
+                personages: ['twilight_sparkle'],
+                background: '#536dfe'
             },
             {
                 answer: 'Generosity',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['rainbow_dash', 'pinkie_pie'],
+                background: '#388e3c'
             },
             {
                 answer: 'Fire',
-                personages: ['rainbow_dash'],
+                personages: ['spike'],
                 background: '#24b2ca'
             },
             {
                 answer: 'Kindness',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['applejack'],
+                background: '#4caf50'
             },
             {
                 answer: 'Loyalty',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['fluttershy'],
+                background: '#ffab40'
             }
 
         ]
@@ -78,33 +78,33 @@ var questions = [
         answers: [
             {
                 answer: 'Smart',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['twilight_sparkle'],
+                background: '#37474f'
             },
             {
-                answer: 'Quiet',
+                answer: 'Race',
                 personages: ['rainbow_dash'],
-                background: '#8c0188'
+                background: '#e64a19'
             },
             {
-                answer: 'Confident',
-                personages: ['rainbow_dash'],
-                background: '#24b2ca'
+                answer: 'Party',
+                personages: ['pinkie_pie'],
+                background: '#1b5e20'
             },
             {
-                answer: 'Teaching',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                answer: 'Fashion',
+                personages: ['rarity'],
+                background: '#d81b60'
             },
             {
-                answer: 'Girly',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                answer: 'Farming',
+                personages: ['applejack'],
+                background: '#6a1b9a'
             },
             {
-                answer: 'Silly',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                answer: 'Shy',
+                personages: ['fluttershy', 'spike'],
+                background: '#c62828'
             }
         ]
     },
@@ -113,33 +113,33 @@ var questions = [
         answers: [
             {
                 answer: 'Beer',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['pinkie_pie'],
+                background: '#512da8'
             },
             {
                 answer: 'Apples',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['applejack'],
+                background: '#558b2f'
             },
             {
                 answer: 'Rainbow chocolate chips',
                 personages: ['rainbow_dash'],
-                background: '#24b2ca'
+                background: '#d84315'
             },
             {
-                answer: 'Carrots',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                answer: 'Carrot dogs',
+                personages: ['spike'],
+                background: '#795548'
             },
             {
                 answer: 'Salad',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['rarity', 'fluttershy'],
+                background: '#d81b60'
             },
             {
                 answer: 'Something that will make me strong',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['twilight_sparkle'],
+                background: '#1e88e5'
             }
         ]
     },
@@ -148,33 +148,38 @@ var questions = [
         answers: [
             {
                 answer: 'A big, mighty dragon',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['spike'],
+                background: '#1b5e20'
             },
             {
                 answer: 'A comedian',
-                personages: ['rainbow_dash'],
+                personages: ['pinkie_pie'],
                 background: '#8c0188'
             },
             {
                 answer: 'A teacher',
-                personages: ['rainbow_dash'],
+                personages: ['twilight_sparkle'],
                 background: '#24b2ca'
             },
             {
                 answer: 'A princess',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['rarity'],
+                background: '#795548'
             },
             {
                 answer: 'A farmer',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['applejack', 'fluttershy'],
+                background: '#536dfe'
             },
             {
                 answer: 'A model',
+                personages: ['rarity'],
+                background: '#d84315'
+            },
+            {
+                answer: 'A racer',
                 personages: ['rainbow_dash'],
-                background: '#8c0188'
+                background: '#388e3c'
             }
         ]
     },
@@ -183,17 +188,17 @@ var questions = [
         answers: [
             {
                 answer: 'A mustache',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['pinkie_pie', 'spike'],
+                background: '#ffab40'
             },
             {
                 answer: 'Long, flowing hair',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['fluttershy'],
+                background: '#d84315'
             },
             {
                 answer: 'A cowboy/cowgirl hat',
-                personages: ['rainbow_dash'],
+                personages: ['applejack'],
                 background: '#24b2ca'
             },
             {
@@ -202,14 +207,14 @@ var questions = [
                 background: '#8c0188'
             },
             {
-                answer: 'A tight dress rarity slipped on me',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                answer: 'A rarity tight dress',
+                personages: ['rarity'],
+                background: '#536dfe'
             },
             {
                 answer: 'A beautiful, long and silky gown',
-                personages: ['rainbow_dash'],
-                background: '#8c0188'
+                personages: ['twilight_sparkle'],
+                background: '#d81b60'
             }
         ]
     }
