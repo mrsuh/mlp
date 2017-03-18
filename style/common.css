@@ -131,7 +131,8 @@ header .content .wrapper h2 {
 }
 .bg-container .test img {
   max-width: 100%;
-  height: 440px;
+  max-height: 440px;
+  min-height: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
