@@ -16,7 +16,7 @@ var personages = [
     },
     {
         id: 'rarity',
-        name: 'RainbowDash',
+        name: 'Rarity',
         img: '/mlp/img/personages/rarity.png'
     },
     {
