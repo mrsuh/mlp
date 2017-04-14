@@ -133,6 +133,7 @@ header .content .wrapper h2 {
 .bg-container .test img {
   max-width: 100%;
   height: auto;
+  max-height: 440px;
   display: block;
   margin-left: auto;
   margin-right: auto;
