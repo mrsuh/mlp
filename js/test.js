@@ -9,7 +9,7 @@ var Test = function (block, questions, personages) {
     this.init()
 };
 
-Test.prototype.onAnswerClick = function () {
+Test.prototype.onAnswerClick = function (event) {
     var personages = JSON.parse(event.target.getAttribute('data-personages'));
 
     for (var i = 0, length = personages.length; i < length; i++) {
