@@ -151,7 +151,7 @@ header {
 
     img {
       max-width: 100%;
-      height: 440px;
+      height: auto;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -178,66 +178,60 @@ header {
 }
 
 .share {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: block;
-  vertical-align: top;
-  text-align: center;
+  display: inline-block;
+  text-align: right;
   font-size: 0;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-left: 50px;
 
   svg {
     margin-right: 6px;
     margin-bottom: 6px;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
 
     .fill {
-      transition: opacity 0.3s;
-      opacity: 1;
-    }
-
-    &.vk {
-      .fill {
-        fill: #4c75a3;
-      }
-    }
-
-    &.github {
-      .fill {
-        fill: #161614;
-      }
-    }
-
-    &.fb {
-      .fill {
-        fill: #3b5998;
-      }
-    }
-
-    &.twitter {
-      .fill {
-        fill: #55acee;
-      }
-    }
-
-    &.ok {
-      .fill {
-        fill: #f58220;
-      }
-    }
-
-    &.google {
-      .fill {
-        fill: #dd5044;
-      }
+      fill: white;
     }
 
     &:hover {
-      .fill {
-        cursor: pointer;
-        opacity: 0.7;
+      cursor: pointer;
+      &.vk {
+        .fill {
+          fill: #4c75a3;
+        }
       }
 
+      &.github {
+        .fill {
+          fill: #161614;
+        }
+      }
+
+      &.fb {
+        .fill {
+          fill: #3b5998;
+        }
+      }
+
+      &.twitter {
+        .fill {
+          fill: #55acee;
+        }
+      }
+
+      &.ok {
+        .fill {
+          fill: #f58220;
+        }
+      }
+
+      &.google {
+        .fill {
+          fill: #dd5044;
+        }
+      }
     }
   }
 }
@@ -261,6 +255,10 @@ header {
       margin-left: 2.5%;
       margin-right: 2.5%;
     }
+  }
+
+  .share {
+    display: none;
   }
 }
 
